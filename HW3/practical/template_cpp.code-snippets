@@ -1,0 +1,51 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	 "template_cpp": {
+		"scope": "cpp",
+	 	"prefix": "template_cpp",
+	 	"body": [
+			"#pragma GCC optimize(\"Ofast,unroll-loops,fast-math\")",
+			"#include <bits/stdc++.h>",
+
+			"using namespace std;",
+			"",
+			"#define int long long ",
+			"#define ll int",
+			"#define F first",
+			"#define S second",
+			"#define pii pair<ll, ll>",
+			"#define pb push_back",
+			"#define endl '\\n'",
+			"#define ENDL \" \\n\"[i == n - 1]",
+			"#define migmig ios::sync_with_stdio(false), cin.tie(0), cout.tie(0);",
+			"#define file_io freopen(\"input.txt\", \"r\", stdin), freopen(\"output.txt\", \"w\", stdout)",
+			"#define RESET   \"\\033[0m\"",
+			"#define RESET   \"\\033[0m\"",
+			"#define BLACK   \"\\033[30m\"      /* Black */",
+			"#define RED     \"\\033[31m\"      /* Red */",
+			"#define GREEN   \"\\033[32m\"      /* Green */",
+			"#define YELLOW  \"\\033[33m\"      /* Yellow */",
+			"#define BLUE    \"\\033[34m\"      /* Blue */",
+			"#define MAGENTA \"\\033[35m\"      /* Magenta */",
+			"#define CYAN    \"\\033[36m\"      /* Cyan */",
+			"#define WHITE   \"\\033[37m\"      /* White */",
+			"",
+			"",
+			"int32_t main()",
+			"{",
+			"	//Dont Forget The ''Map''  :)",
+			"	",
+			"	migmig;",
+			"	",
+			"	",
+			"}"
+	 	],
+	 	"description":"Log tput to console",
+	}
+}
