@@ -1,0 +1,21 @@
+Please solve the following question in Python.
+We have a graph G that we don't know if it is bipartite or not.
+To show the graph G, only a sequence of letters (string) is given as input, both letters together display an edge, for example, if abcd is given as input, it means that we have gone from vertex a to b and from c to d, so we have four vertices a, b, c, and d and we have 2 edges ab and cd.
+But if, for example, we want d to be an isolated vertex in this graph, we separate it from the rest of the vertices with a space, i.e. abc d. it means that we have 1 edge that is  ab and there are 2 isolated vertices c and d.
+Note: Graphs are undirected. We do not have parallel edges in the graphs, and if an edge is repeated several times in the input, we only consider it once. We may have loops among edges (Edges connects one vertex to itself are loops). Distinctive letters indicate the number of vertices and the number of edges is determined after removing duplicate edges.
+What we want to do is, if the graph is not bipartite, convert it to bipartite by removing the minimum number of edges and then print the number of remaining edges as output. 
+If it is a bipartite graph, calculate the number of edges in the complement of that graph and print it as output.
+Example
+Sample input 1
+abacdedfsopwkslskc
+The graph above contains 12 vertices and 9 edges, and on the other hand, it is bipartite, so the number of edges in he complement of the graph should be printed as output is 57. 
+(11*12)/2 - 9 = 66 - 9 = 57
+Sample output 1
+57
+
+Sample input 2
+kjhgfyfhjklkohufyykpjhgyfhjkphitdyjkpjogyfjkjhgfdfghkljhhgfg
+The above graph contains 13 vertices and 19 edges (pay attention we do not have parallel edges in the graphs. Some of the edges are repeated, for example, kj, jk, or jk appears several times we only consider it once. Note that we have yy edge which is a loop.), and it is not bipartite, so the minimum number of edges must be removed to make it bipartite is 14. one of the methods for removing edges can be as follows:
+Edges yy, jp, og, fg, fd must be removed and therefore the number of remaining edges is equal to 14.
+Sample output 2
+14

@@ -1,0 +1,37 @@
+Please solve the following question in Python.
+We know that matching in a graph can have one of the following three forms.
+Maximal matching: a matching that is not a subset of any matching.
+Maximum matching: matching that has the maximum possible number of edges.
+Complete matching: A matching that covers all vertices in the graph.
+Now suppose the input of the question is the same as the previous question, print out in the output what is the number of edges in the maximum matching of the given graph.
+Example
+Sample input 1
+abacdedfsopwkslskc
+One of the maximum matching states of this graph has 5 edges ab, ck, so, de and pw. So, the number of edges in the maximum matching of the given graph is 5.
+Sample output 1
+5
+Sample input 2
+abacbcbebddeegeffgghhigiijkjkljllnlmmnnpnopororqoqqtsqstsuuvuwvwwxwyxyzx
+Sample output 2
+13
+
+
+##########################################
+Please solve the following question in Python.
+We know that the definition of maximum matching in a graph is as follows:
+Maximum matching: matching that has the maximum possible number of edges.
+To show the graph G, only a sequence of letters (string) is given as input, both letters together display an edge, for example, if abcd is given as input, it means that we have gone from vertex a to b and from c to d, so we have four vertices a, b, c, and d and we have 2 edges ab and cd.
+But if, for example, we want d to be an isolated vertex in this graph, we separate it from the rest of the vertices with a space, i.e. abc d. it means that we have 1 edge that is  ab and there are 2 isolated vertices c and d.
+Note: Graphs are undirected. We do not have parallel edges in the graphs, and if an edge is repeated several times in the input, we only consider it once. We may have loops among edges (Edges connects one vertex to itself are loops). Distinctive letters indicate the number of vertices and the number of edges is determined after removing duplicate edges.
+Please print out in the output what is the number of edges in the maximum matching of the given graph.
+Example
+Sample input 1
+abacdedfsopwkslskc
+One of the maximum matching states of this graph has 5 edges ab, ck, so, de and pw. So, the number of edges in the maximum matching of the given graph is 5.
+Sample output 1
+5
+Sample input 2
+abacbcbebddeegeffgghhigiijkjkljllnlmmnnpnopororqoqqtsqstsuuvuwvwwxwyxyzx
+Sample output 2
+13
+Note: you can use Hopcroft-Karp algorithm to find the maximum matching in the bipartite graph.
